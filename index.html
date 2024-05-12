@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js" defer></script>
+    <script type="module" src="./main.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="app">
+        <div class="characters">
+            <button class="btn character active" id="x">X</button>
+            <button class="btn character" id="o">O</button>
+        </div>
+        <div class="board">
+            <div data-index="0" class="cell border-bottom border-right"></div>
+            <div data-index="1" class="cell border-bottom"></div>
+            <div data-index="2" class="cell border-bottom border-left"></div>
+            <div data-index="3" class="cell border-right"></div>
+            <div data-index="4" class="cell"></div>
+            <div data-index="5" class="cell border-left"></div>
+            <div data-index="6" class="cell border-top border-right"></div>
+            <div data-index="7" class="cell border-top"></div>
+            <div data-index="8" class="cell border-top border-left"></div>
+            <button id="restart" class="btn">RESTART</button>
+        </div>
+    </div>
+    <div class="message">It's Draw</div>
 </body>
+
 </html>
