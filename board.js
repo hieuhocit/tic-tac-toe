@@ -62,6 +62,7 @@ const Board = (function () {
             console.log("DRAW");
             endGame();
             message.innerHTML = "It's draw!";
+            message.style.display = "grid";
         }
     }
 
